@@ -167,3 +167,7 @@ footer .footer-img-ul li {
   color: white;
   background-color: #ff3c1b;
 }
+
+.container .col-10 tbody {
+  background-color: #f9f9f9;
+}
