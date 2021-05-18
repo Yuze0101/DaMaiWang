@@ -69,11 +69,27 @@
               background-color: $mainColor;
             }
           }
+          #head_img{
+              #img-choose-base {
+                width: 468px;
+                height: 360px;
+              }
+              .btn {
+                  background-color: $mainColor;
+                  width: 100px;
+                  color:white;
+              }
+              
+          }
+          #hobby {
+              min-height: 110px;
+              .btn {
+                  width: 100px;
+              }
+          }
         }
       }
-    }
-    tbody {
-      background-color: #f9f9f9;
+
     }
   }
 }
