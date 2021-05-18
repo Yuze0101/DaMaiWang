@@ -1,7 +1,6 @@
 <!--
  * @Author: GengYuan
  * @Date: 2021-05-18 12:22:48
- * @LastEditTime: 2021-05-18 14:08:34
  * @LastEditors: GengYuan
  * @Description: 
  * @FilePath: \大麦网\DaMaiWang\README.md
@@ -31,8 +30,6 @@
 - 合理项目目录架构
 - 接口规范
     - 请求命名规范
-    - xxxx
-    - 123
 - 数据规范
 ## 技术栈
 - HTML
