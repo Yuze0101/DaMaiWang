@@ -1,0 +1,124 @@
+<!--
+ * @Author: leihao
+ * @Date: 2021-05-18 15:46:40
+ * @LastEditTime: 2021-05-18 18:00:04
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \大麦网\DaMaiWang\DaMaiWang-Demo\src\html\UserCenter.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/UserCenter.css">
+    <link rel="stylesheet" href="../util/bootstrap-4.6.0-dist/css/bootstrap.css">
+</head>
+
+<body>
+
+
+    <!-- 顶部面包屑导航 -->
+    <nav aria-label="breadcrumb" class="container bg-white">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-dark">我的大觅</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-dark">账户中心</a></li>
+            <li class="breadcrumb-item active" aria-current="page" class="text-dark">个人信息</li>
+        </ol>
+    </nav>
+
+
+    <!-- 主体部分 -->
+    <main class="container">
+        <div class="row d-flex">
+
+
+            <!-- 主体部分左侧导航栏 -->
+            <div class="col-2">
+                <p class="left-menu-header font-weight-bolder">我的大觅</p>
+                <div class="nav flex-column" id="userCenter-menu" role="tablist" aria-orientation="vertical">
+                    <p class="font-weight-bold my-0 py-2">交易中心</p>
+                    <a class="nav-link active text-dark my-2 pl-3" id="order-manage-tab" data-toggle="tab"
+                        href="#order-manage" role="tab" aria-controls="order-manage" aria-selected="true">订单管理</a>
+                    <p class="font-weight-bold py-2 my-0">账户中心</p>
+                    <a class="nav-link text-dark  my-2  pl-3" id="user-inform-tab" href="#user-inform" data-toggle="tab"
+                        role="tab" aria-controls="user-inform" aria-selected="false">个人信息</a>
+                    <a class="nav-link text-dark  my-2  pl-3" id="ticket-buyer-tab" data-toggle="tab"
+                        href="#ticket-buyer" role="tab" aria-controls="ticket-buyer" aria-selected="false">常用购票人</a>
+                </div>
+            </div>
+
+
+            <!-- 主体部分右侧内容区域 -->
+            <div class="col-10 pl-3 pr-0">
+                <div class="right-base px-3">
+
+                    <div class="tab-content" id="userCenter-tabContent">
+                        <div class="tab-pane fade show active" id="order-manage" role="tabpanel"
+                            aria-labelledby="order-manage-tab">
+                            <p class="right-header">订单管理</p>
+                            <p class="recent-order">近期订单列表</p>
+                            <select name="" id="all">
+                                <option value="all-order">全部订单</option>
+                            </select>
+                            <select name="" id="three-month">
+                                <option value="three-month-order">近三个月订单</option>
+                            </select>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <td scope="col">项目名称</td>
+                                        <td scope="col">数量</td>
+                                        <td scope="col">票价</td>
+                                        <td scope="col">售后</td>
+                                        <td scope="col">订单金额</td>
+                                        <td scope="col">交易状态</td>
+                                        <td scope="col">操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col" colspan="7">
+                                            <p class="m-0">
+                                                订单编号：
+                                                <span>1050348163</span>
+                                                成交时间：
+                                                <span>2017-11-24</span><span>10:27</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <p class="m-0">巧虎新年特别互<br>
+                                                动秀--北京站</p>
+                                        </td>
+                                        <td>200.00</td>
+                                        <td>2</td>
+                                        <td>北京总部</td>
+                                        <td>200.00</td>
+                                        <td>交易成功</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="user-inform" role="tabpanel" aria-labelledby="user-inform-tab">
+                            2
+                        </div>
+                        <div class="tab-pane fade" id="ticket-buyer" role="tabpanel" aria-labelledby="ticket-buyer-tab">
+                            功能未上线
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../util/jquery-3.5.1.min.js"></script>
+    <script src="../util/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../util/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
