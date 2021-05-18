@@ -1,7 +1,7 @@
 <!--
  * @Author: leihao
  * @Date: 2021-05-18 15:46:40
- * @LastEditTime: 2021-05-18 18:00:04
+ * @LastEditTime: 2021-05-18 20:08:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \大麦网\DaMaiWang\DaMaiWang-Demo\src\html\UserCenter.html
@@ -41,11 +41,11 @@
                 <p class="left-menu-header font-weight-bolder">我的大觅</p>
                 <div class="nav flex-column" id="userCenter-menu" role="tablist" aria-orientation="vertical">
                     <p class="font-weight-bold my-0 py-2">交易中心</p>
-                    <a class="nav-link active text-dark my-2 pl-3" id="order-manage-tab" data-toggle="tab"
-                        href="#order-manage" role="tab" aria-controls="order-manage" aria-selected="true">订单管理</a>
+                    <a class="nav-link text-dark my-2 pl-3" id="order-manage-tab" data-toggle="tab" href="#order-manage"
+                        role="tab" aria-controls="order-manage" aria-selected="true">订单管理</a>
                     <p class="font-weight-bold py-2 my-0">账户中心</p>
-                    <a class="nav-link text-dark  my-2  pl-3" id="user-inform-tab" href="#user-inform" data-toggle="tab"
-                        role="tab" aria-controls="user-inform" aria-selected="false">个人信息</a>
+                    <a class="nav-link text-dark  active my-2  pl-3" id="user-inform-tab" href="#user-inform"
+                        data-toggle="tab" role="tab" aria-controls="user-inform" aria-selected="false">个人信息</a>
                     <a class="nav-link text-dark  my-2  pl-3" id="ticket-buyer-tab" data-toggle="tab"
                         href="#ticket-buyer" role="tab" aria-controls="ticket-buyer" aria-selected="false">常用购票人</a>
                 </div>
@@ -56,9 +56,11 @@
             <div class="col-10 pl-3 pr-0">
                 <div class="right-base px-3">
 
+                    
                     <div class="tab-content" id="userCenter-tabContent">
-                        <div class="tab-pane fade show active" id="order-manage" role="tabpanel"
-                            aria-labelledby="order-manage-tab">
+
+                        <!-- 订单管理内容 -->
+                        <div class="tab-pane fade" id="order-manage" role="tabpanel" aria-labelledby="order-manage-tab">
                             <p class="right-header">订单管理</p>
                             <p class="recent-order">近期订单列表</p>
                             <select name="" id="all">
@@ -67,6 +69,8 @@
                             <select name="" id="three-month">
                                 <option value="three-month-order">近三个月订单</option>
                             </select>
+
+                            <!-- 订单表格 -->
                             <table class="table table-bordered mt-3">
                                 <thead>
                                     <tr>
@@ -105,8 +109,154 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-pane fade" id="user-inform" role="tabpanel" aria-labelledby="user-inform-tab">
-                            2
+
+                        <!-- 个人信息设置 -->
+                        <div class="tab-pane fade active show" id="user-inform" role="tabpanel"
+                            aria-labelledby="user-inform-tab">
+                            <!-- 头部导航栏 -->
+                            <div class="nav nav-tabs  border-0" id="nav-tab" role="tablist">
+                                <a class="nav-link active border-bottom-0 border-left-0 border-right-0"
+                                    id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                                    aria-controls="nav-home" aria-selected="true">基本资料</a>
+                                <a class="nav-link border-bottom-0 border-left-0 border-right-0" id="nav-profile-tab"
+                                    data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">头像设置</a>
+                                <a class="nav-link border-bottom-0 border-left-0 border-right-0" id="nav-contact-tab"
+                                    data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">兴趣爱好</a>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- 基本资料内容 -->
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div>
+                                        <div class="alert alert-warning" role="alert">
+                                            完善更多个人信息，有助于我们为您提供更加个性化的服务，大麦网将尊重并保护您的隐私。
+                                        </div>
+                                        <!-- 基本资料表单 -->
+                                        <form action="">
+                                            <div class="form-group row">
+                                                <label for="inputNikName" class="col-sm-2 col-form-label">*昵称</label>
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control" id="inputNikName">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputName" class="col-sm-2 col-form-label">真实姓名</label>
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control" id="inputName">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputSex" class="col-sm-2 col-form-label">*性别</label>
+                                                <div class="col-sm-2 d-flex justify-content-between sex-checkbox">
+                                                    <div>
+                                                        <input type="radio" name="sex" id="inputSexMan" value="1"
+                                                            checked>男
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="sex" id="inputSexWoman" value="0">女
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputBirthDay" class="col-sm-2 col-form-label">出生日期</label>
+                                                <div class="col-sm-5">
+                                                    <input type="date" class="form-control" id="inputBirthDay">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputMarry" class="col-sm-2 col-form-label">婚姻状况</label>
+                                                <div class="col-sm-5">
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>请选择</option>
+                                                        <option>已婚</option>
+                                                        <option>未婚</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputEdu" class="col-sm-2 col-form-label">教育程度</label>
+                                                <div class="col-sm-5">
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>请选择</option>
+                                                        <option>本科及以下</option>
+                                                        <option>研究生及以上</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputCareer" class="col-sm-2 col-form-label">从事行业</label>
+                                                <div class="col-sm-5">
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>请选择</option>
+                                                        <option>传统行业</option>
+                                                        <option>非传统行业</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputIncome" class="col-sm-2 col-form-label">每月收入</label>
+                                                <div class="col-sm-5">
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>请选择</option>
+                                                        <option>一万元以下</option>
+                                                        <option>一万元以上</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputHometown" class="col-sm-2 col-form-label">家乡</label>
+                                                <div class="col-sm-6 d-flex justify-content-between">
+                                                    <select id="inputState" class="form-control col-sm-5">
+                                                        <option selected>不限</option>
+                                                        <option>北京</option>
+                                                        <option>四川</option>
+                                                    </select>
+                                                    <select id="inputState" class="form-control col-sm-5">
+                                                        <option selected>不限</option>
+                                                        <option>东城区</option>
+                                                        <option>成都</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPosition" class="col-sm-2 col-form-label">现居住地</label>
+                                                <div class="col-sm-6 d-flex justify-content-between">
+                                                    <select id="inputState" class="form-control col-sm-5">
+                                                        <option selected>不限</option>
+                                                        <option>北京</option>
+                                                        <option>四川</option>
+                                                    </select>
+                                                    <select id="inputState" class="form-control col-sm-5">
+                                                        <option selected>不限</option>
+                                                        <option>东城区</option>
+                                                        <option>成都</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="idNumber" class="col-sm-2 col-form-label">身份证号</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="inputName">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <button type="submit" class="btn">保存</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 头像设置 -->
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">3</div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="ticket-buyer" role="tabpanel" aria-labelledby="ticket-buyer-tab">
                             功能未上线

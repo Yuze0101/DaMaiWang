@@ -1,3 +1,4 @@
+@import "./global";
 .container {
 
 
@@ -44,6 +45,33 @@
                 }
                 tbody {
                     background-color: #f9f9f9;
+                }
+            }
+            #user-inform {
+                #nav-tab {
+                    .active {
+                        border-top: 3px solid $mainColor;
+                        color: $mainColor;
+                    }
+                    a {
+                        border-top: 3px solid transparent;
+                        color: black;
+                    }
+                }
+                #nav-tabContent {
+                    .alert-warning{
+                        max-width: 700px;
+                        border: 1px solid #edd28b;
+                    }
+                    form {
+                        .sex-checkbox {
+                            line-height: 38px;
+                        }
+                        .btn {width: 200px;
+                            color: white;
+                            background-color: $mainColor;
+                        }
+                    }
                 }
             }
         }
