@@ -1,8 +1,6 @@
-html {
-  min-height: 960px;
-}
-
 body {
+  position: relative;
+  min-height: 560px;
   margin: 0;
   background-color: #f5f5f5;
 }
@@ -47,8 +45,8 @@ header #nav-bar li {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: -400px;
   width: 100%;
   font-size: 12px;
   background-color: #e6e6e6;
