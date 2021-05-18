@@ -100,7 +100,9 @@ main {
 }
 
 main #top-div #items {
-  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
   color: white;
   list-style: none;
   text-align: center;
@@ -128,4 +130,73 @@ main #top-div #items li img {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+main #top-div #nav {
+  font-size: 16px;
+  padding-left: 14px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  line-height: 50px;
+}
+
+main #top-div #nav li {
+  height: 50px;
+  padding: 0 30px;
+}
+
+main #top-div #carousel-chart {
+  height: 400px;
+}
+
+main #second-div h6 {
+  font-size: 18px;
+}
+
+main #third-div #third-div-left {
+  width: 75%;
+}
+
+main #third-div #third-div-left h6 span {
+  font-size: 20px;
+  padding-right: 16px;
+}
+
+main #third-div #third-div-left .list-item {
+  height: 150px;
+  width: 270px;
+}
+
+main #third-div #third-div-left .list-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+main #third-div #third-div-right {
+  width: 23%;
+}
+
+main #third-div #third-div-right h6 {
+  font-size: 20px;
+}
+
+main #third-div #third-div-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main #third-div #third-div-right ul li {
+  padding: 8px 0;
+}
+
+main #third-div #third-div-right ul li span {
+  display: inline-block;
+  text-align: center;
+  width: 14px;
+  background-color: red;
+  color: white;
 }
