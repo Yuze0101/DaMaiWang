@@ -1,7 +1,7 @@
 <!--
  * @Author: GengYuan
  * @Date: 2021-05-18 12:22:48
- * @LastEditTime: 2021-05-18 13:45:11
+ * @LastEditTime: 2021-05-18 13:50:37
  * @LastEditors: GengYuan
  * @Description: 
  * @FilePath: \大麦网\DaMaiWang\README.md
@@ -28,6 +28,9 @@
 - 首页轮播图
 - 搜索
 ## 项目规范
+- 合理项目目录架构
+- 接口规范
+- 数据规范
 ## 技术栈
 - HTML
 - CSS
