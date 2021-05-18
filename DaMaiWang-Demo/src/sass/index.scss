@@ -3,7 +3,9 @@ main {
   font-size: 12px;
   #top-div {
     #items {
-      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
       color: white;
       list-style: none;
       text-align: center;
@@ -14,18 +16,78 @@ main {
         background-color: #ff3c1b;
         overflow: hidden;
         position: relative;
-        span{
+        span {
           display: block;
           height: 100%;
           width: 100%;
           background-color: #000000;
         }
-        img{
+        img {
           position: absolute;
           left: 30px;
           top: 0;
           bottom: 0;
           margin: auto;
+        }
+      }
+    }
+    #nav {
+      font-size: 16px;
+      padding-left: 14px;
+      margin: 0;
+      display: flex;
+      list-style: none;
+      line-height: 50px;
+      li {
+        height: 50px;
+        padding: 0 30px;
+      }
+    }
+    #carousel-chart {
+      height: 400px;
+    }
+  }
+  #second-div {
+    h6 {
+      font-size: 18px;
+    }
+  }
+  #third-div {
+    #third-div-left {
+      width: 75%;
+      h6 {
+        span {
+          font-size: 20px;
+          padding-right: 16px;
+        }
+      }
+      .list-item{
+        height: 150px;
+        width: 270px;
+        p{
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+    }
+    #third-div-right{
+      width: 23%;
+      h6{
+        font-size: 20px;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+          padding: 8px 0;
+          span{
+            display: inline-block;
+            text-align: center;
+            width: 14px;
+            background-color: red;
+            color: white;
+          }
         }
       }
     }
