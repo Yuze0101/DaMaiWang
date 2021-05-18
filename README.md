@@ -1,7 +1,7 @@
 <!--
  * @Author: GengYuan
  * @Date: 2021-05-18 12:22:48
- * @LastEditTime: 2021-05-18 13:12:49
+ * @LastEditTime: 2021-05-18 13:20:06
  * @LastEditors: GengYuan
  * @Description: 
  * @FilePath: \第二周项目副本\DaMaiWang\README.md
@@ -11,3 +11,4 @@
 ## 页面需求
 ## 功能需求
 ## 项目规范
+## 技术栈
