@@ -1,52 +1,48 @@
 .container {
+  .col-2 {
+    background-color: white;
 
-
-    .col-2 {
-        background-color: white;
-
-        .left-menu-header {
-            color: #ff3c1b;
-            line-height: 40px;
-            border-bottom: 1px dashed #dcdcdc;
-        }
-
-        #userCenter-menu {
-            p {
-                font-size: 14px;
-            }
-            a {
-                font-size: 14px;
-                padding: 0;
-            }
-            .active {
-                border-left: 3px solid #ff3c1b;
-            }
-        }
-
+    .left-menu-header {
+      color: #ff3c1b;
+      line-height: 40px;
+      border-bottom: 1px dashed #dcdcdc;
     }
 
-    .col-10 {
-        .right-base {
-            background-color: white;
-            .right-header {
-                line-height: 40px;
-                border-bottom: 1px dashed #dcdcdc;
-            }
-            table {
-                text-align: center;
-                thead {
-                    tr:first-child{
-                        background-color: #f9f9f9;
-                    }
-                    p {
-                        text-align: start;
-                    }
-                }
-                tbody {
-                    background-color: #f9f9f9;
-                }
-            }
-        }
-
+    #userCenter-menu {
+      p {
+        font-size: 14px;
+      }
+      a {
+        font-size: 14px;
+        padding: 0;
+      }
+      .active {
+        border-left: 3px solid #ff3c1b;
+      }
     }
+  }
+
+  .col-10 {
+    .right-base {
+      background-color: white;
+      .right-header {
+        line-height: 40px;
+        border-bottom: 1px dashed #dcdcdc;
+      }
+      table {
+        text-align: center;
+        thead {
+          tr:first-child {
+            background-color: #f9f9f9;
+          }
+          p {
+            text-align: start;
+          }
+        }
+        tbody {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+  }
 }
