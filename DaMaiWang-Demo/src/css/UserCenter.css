@@ -171,6 +171,21 @@ footer .footer-img-ul li {
   background-color: #ff3c1b;
 }
 
-.container .col-10 tbody {
-  background-color: #f9f9f9;
+.container .col-10 .right-base #user-inform #nav-tabContent #head_img #img-choose-base {
+  width: 468px;
+  height: 360px;
+}
+
+.container .col-10 .right-base #user-inform #nav-tabContent #head_img .btn {
+  background-color: #ff3c1b;
+  width: 100px;
+  color: white;
+}
+
+.container .col-10 .right-base #user-inform #nav-tabContent #hobby {
+  min-height: 110px;
+}
+
+.container .col-10 .right-base #user-inform #nav-tabContent #hobby .btn {
+  width: 100px;
 }
