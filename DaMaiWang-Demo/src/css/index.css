@@ -100,7 +100,7 @@ main {
   font-size: 12px;
 }
 
-main #top-div #items {
+main #first-div #items {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -110,7 +110,7 @@ main #top-div #items {
   line-height: 50px;
 }
 
-main #top-div #items li {
+main #first-div #items li {
   width: 220px;
   height: 50px;
   background-color: #ff3c1b;
@@ -118,14 +118,14 @@ main #top-div #items li {
   position: relative;
 }
 
-main #top-div #items li span {
+main #first-div #items li span {
   display: block;
   height: 100%;
   width: 100%;
   background-color: #000000;
 }
 
-main #top-div #items li img {
+main #first-div #items li img {
   position: absolute;
   left: 30px;
   top: 0;
@@ -133,7 +133,8 @@ main #top-div #items li img {
   margin: auto;
 }
 
-main #top-div #nav {
+main #first-div #nav {
+  text-align: center;
   font-size: 16px;
   padding-left: 14px;
   margin: 0;
@@ -144,12 +145,12 @@ main #top-div #nav {
   line-height: 50px;
 }
 
-main #top-div #nav li {
+main #first-div #nav li {
   height: 50px;
-  padding: 0 30px;
+  width: 88px;
 }
 
-main #top-div #carousel-chart {
+main #first-div #carousel-chart {
   height: 400px;
 }
 

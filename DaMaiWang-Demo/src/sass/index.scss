@@ -1,7 +1,7 @@
 @import "./global";
 main {
   font-size: 12px;
-  #top-div {
+  #first-div {
     #items {
       margin: 0;
       padding: 0;
@@ -32,6 +32,7 @@ main {
       }
     }
     #nav {
+      text-align: center;
       font-size: 16px;
       padding-left: 14px;
       margin: 0;
@@ -40,7 +41,7 @@ main {
       line-height: 50px;
       li {
         height: 50px;
-        padding: 0 30px;
+        width: 88px;
       }
     }
     #carousel-chart {
