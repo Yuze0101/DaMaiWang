@@ -1,7 +1,7 @@
 <!--
  * @Author: GengYuan
  * @Date: 2021-05-19 16:14:10
- * @LastEditTime: 2021-05-19 17:10:57
+ * @LastEditTime: 2021-05-19 19:45:11
  * @LastEditors: GengYuan
  * @Description: 
  * @FilePath: \大麦网\DaMaiWang\DaMaiWang-Demo\src\html\confirm.html
@@ -83,8 +83,78 @@
             <p>快递配送</p>
           </div>
         </div>
+        <form action="" class="border p-3 bg-light">
+          <h5 class="text-secondary">身份证电子票</h5>
+          用户姓名：<input type="text" /> 手机号码：<input type="text" />
+        </form>
+      </div>
+      <div class="container mt-3 p-3 bg-white" id="second-div">
+        <h5>实名证件信息</h5>
+        <span class="text-secondary">购票人：</span
+        ><button class="btn btn-danger">选择购票人</button>
+      </div>
+      <div class="container mt-3 p-3 bg-white" id="third-div">
+        <h5>选择付款方式</h5>
+        <input type="radio" name="" id="" /> 网上付款
+      </div>
+      <div class="container mt-3 p-3 bg-white" id="forth-div">
+        <h5>商品清单</h5>
+        <table class="table-striped w-100 text-center">
+          <thead>
+            <tr>
+              <td>商品名称</td>
+              <td>座位号</td>
+              <td>价格</td>
+              <td>数量</td>
+              <td>价格小计</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>巧虎新年特别互动秀--北京站2018-01-06 周六 10:00</td>
+              <td>看台前区8排3号</td>
+              <td>200.00</td>
+              <td>2</td>
+              <td>400.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container mt-3 p-3 bg-white" id="fifth-div">
         <form action="">
-            
+          <h5>我要开发票</h5>
+          <p class="text-secondary">我要开发票</p>
+          <p>
+            所在地区：<input
+              type="radio"
+              name=""
+              id=""
+              class="mx-2"
+            />公司<input type="radio" name="" id="" class="mx-2" />个人
+          </p>
+          <p>
+            所在地区：<select name="" id="" class="w-25">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </p>
+          <p class="d-flex">
+            街道地区：<textarea
+              name=""
+              id=""
+              cols="23"
+              rows="1"
+              class="w-25"
+            ></textarea>
+          </p>
+          <p>发票抬头：<input type="text" class="w-25" /></p>
+          <button class="btn btn-danger w-auto">确认</button>
+        </form>
+        <form action="">
+          <h5>给大麦留言</h5>
+          <textarea name="" id="" cols="30" rows="5" class="w-100"></textarea>
+          <button class="btn btn-danger w-auto">确认</button>
         </form>
       </div>
     </main>
