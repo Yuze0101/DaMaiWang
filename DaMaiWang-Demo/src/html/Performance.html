@@ -1,0 +1,244 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-05-19 14:10:22
+ * @LastEditTime: 2021-05-19 16:14:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \大麦网\DaMaiWang\DaMaiWang-Demo\src\html\performance.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../util/bootstrap-4.6.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Performance.min.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <header>
+        <div class="
+                container
+                d-flex
+                align-items-center
+                h-100
+                justify-content-between
+              ">
+            <!-- logo与选择模块 -->
+            <div>
+                <img src="../images/logo.png" alt="" />
+                <select name="city" id="city" class="border-0 ml-3">
+                    <option value="">北京站</option>
+                    <option value="">成都站</option>
+                    <option value="">广州站</option>
+                </select>
+            </div>
+            <!-- 搜索框与登录模块 -->
+            <div class="d-flex justify-content-end">
+                <div class="form-group m-0 d-flex position-relative">
+                    <input type="text" class="form-control rounded-pill" placeholder="请输入演出、赛事、艺人、场馆名称.." />
+                    <img src="../images/icon-2.png" class="position-absolute" />
+                </div>
+                <ul id="nav-bar">
+                    <li>HI,XXX <span id="quit">退出</span></li>
+                    <li>
+                        <select name="mine" id="mine" class="border-0">
+                            <option value="">我的大麦</option>
+                        </select>
+                    </li>
+                    <li class="border-0">我的订单</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 顶部面包屑导航 -->
+    <nav aria-label="breadcrumb" class="container bg-transparent">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-dark">大麦网</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-dark">北京</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-dark">歌剧话剧</a></li>
+            <li class="breadcrumb-item active" aria-current="page" class="text-dark">大型多媒体励志互动儿童剧《爱丽丝梦游仙境》（12月）</li>
+        </ol>
+    </nav>
+    <!-- 主体部分 -->
+    <main class="container">
+        <!-- 主体顶部商品信息 -->
+        <!-- 选票 -->
+        <div id="buy-ticket" class="bg-white d-flex justify-content-between p-4">
+            <div id="left-box" class="d-flex justify-content-start align-items-start w-75">
+                <!-- 图片 -->
+                <div id="left-img-box">
+                    <img src="../images/performance_details/head_pic.png" alt="">
+                </div>
+                <!-- 选票购坐 -->
+                <div id="left-items-box" class="pl-4">
+                    <h5 class="font-weight-bold">大型多媒体励志互动儿童剧《爱丽丝梦游仙境》 (12月)</h5>
+                    <p class="text-black-50">爱丽丝梦游仙境</p>
+                    <!-- 购票进度 -->
+                    <div class="w-100 py-2">
+                        <div class="progress-title d-flex justify-content-between text-center py-3">
+                            <div class="w-25">项目待定</div>
+                            <div class="w-25">预售/预定</div>
+                            <div class="w-25">售票中</div>
+                            <div class="w-25">演出开始</div>
+                        </div>
+                        <div class="progress">
+                            <!-- 进度条位置15%/40%/65%/100% -->
+                            <div id="progress-line" class="progress-bar" style="width: 15%" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div id="progress_ball"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <form action="" id="performance-inform">
+                        <div class="form-group row pt-3">
+                            <label class="col-sm-2 col-form-label pr-0">演出时间:</label>
+                            <div class="col-sm-10 d-flex justify-content-start pr-0">
+                              <button type="button" class="btn btn-light px-1 mr-2" id="choosePlace-1">2021-12-23 周六 15:20</button>
+                              <button type="button" class="btn btn-light px-1" id="choosePlace-2">2021-12-24 周日 10:20</button>
+                            </div>
+                          </div>
+                          <div class="form-group row pt-3">
+                            <label class="col-sm-2 col-form-label pr-0">选择票价:</label>
+                            <div class="col-sm-10 d-flex justify-content-start flex-wrap pr-0">
+                                <button type="button" class="btn btn-light px-4 mr-2" id="choosePrice-1"><span>80</span>元</button>
+                                <button type="button" class="btn btn-light px-4 mr-2" id="choosePrice-1"><span>120</span>元</button>
+                                <button type="button" class="btn btn-light px-4 mr-2" id="choosePrice-1"><span>180</span>元</button>
+                                <button type="button" class="btn btn-light px-4" id="choosePrice-1"><span>200</span>元</button>
+                                <button type="button" class="btn btn-light px-4 mr-2 mt-2" id="choosePrice-1"><span>280</span>元</button>
+                                <button type="button" class="btn btn-light px-4 mt-2" id="choosePrice-1"><span>580</span>元</button>
+                            </div>
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn">选座购买</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 评分 -->
+            <div class="w-25">
+                <ul class="rigth-grade">
+                    <li>
+                        <p>大麦网评分:</p>
+                        <label for="" class="rigth-score">2</label><span class="rigth-decimals">.0</span>
+                        <!-- 评星，js换图 -->
+                        <img src="../images/xin-1.png" alt="">
+                        <img src="../images/xin-1.png" alt="">
+                        <img src="../images/xin-1.png" alt="">
+                        <img src="../images/xin-1.png" alt="">
+                        <img src="../images/xin-1.png" alt="">
+
+                        <span class="rigth-count">0</span>人参与评论
+                    </li>
+                    <li>
+                        <p>演出时间</p>
+                        <span>2021.12.23-12.24</span>
+                    </li>
+                    <li>
+                        <p>演出场馆</p>
+                        <span>中国儿童中心剧院-北京市</span><br>
+                        <img src="../images/dingwei.png" alt=""> 交通路线
+                    </li>
+                    <li>
+                        <p>票品支持</p>
+                        <img src="../images/fudai.png" alt="">
+                        <span>返积分</span>
+                    </li>
+                    <li>
+                        <p>实票配送</p>
+                        <select name="" id="">
+                            <option value="">北京</option>
+                            <option value="">四川</option>
+                            <option value="">重庆</option>
+                        </select><br>
+                        <span>同城满100.00元免运费，不满收10.00元,发货后1-3天到达</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <!-- 底部导航栏 -->
+    <footer>
+        <div class="container flex-column align-items-center">
+            <div class="d-flex justify-content-around pt-2">
+                <ul>
+                    <li><span>订购方式</span></li>
+                    <li>在线订购</li>
+                    <li>电话订购</li>
+                    <li>上门订购</li>
+                    <li>大客户团体订购</li>
+                    <li>大麦超级订购</li>
+                </ul>
+                <ul>
+                    <li><span>配送方式</span></li>
+                    <li>送货上门</li>
+                    <li>电子票</li>
+                    <li>上门自取</li>
+                    <li>大麦自助机换票</li>
+                </ul>
+                <ul>
+                    <li><span>支付方式</span></li>
+                    <li>在线支付</li>
+                    <li>柜台付款</li>
+                </ul>
+                <ul>
+                    <li><span>小麦网微信</span></li>
+                    <li><img src="../images/code-1.png" alt="" /></li>
+                </ul>
+                <ul>
+                    <li><span>小麦网触屏版</span></li>
+                    <li><img src="../images/code-2.png" alt="" /></li>
+                </ul>
+                <ul>
+                    <li><span>配送方式</span></li>
+                    <li>找回密码</li>
+                    <li>账户注册</li>
+                    <li>账户绑定</li>
+                    <li>SSL安全证书</li>
+                </ul>
+                <ul>
+                    <li><span>配送方式</span></li>
+                    <li>退换及缺货说明</li>
+                    <li>发票帮助</li>
+                    <li>订票服务条款</li>
+                </ul>
+                <ul>
+                    <li><span>特色服务</span></li>
+                    <li>演出订阅</li>
+                </ul>
+            </div>
+            <hr />
+            <ul class="footer-nav-ul">
+                <li>公司介绍</li>
+                <li>品牌识别</li>
+                <li>企业荣誉</li>
+                <li>隐私声明</li>
+                <li>联系及合作</li>
+                <li>招聘信息</li>
+                <li>网站地图</li>
+                <li>友情链接</li>
+                <li class="border-0">公司大事记</li>
+            </ul>
+            <ul class="footer-img-ul">
+                <li><img src="../images/foot-1.png" alt="" /></li>
+                <li><img src="../images/foot-2.png" alt="" /></li>
+                <li><img src="../images/foot-3.png" alt="" /></li>
+                <li><img src="../images/foot-4.png" alt="" /></li>
+                <li><img src="../images/foot-5.png" alt="" /></li>
+                <li><img src="../images/foot-6.png" alt="" /></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../util/jquery-3.5.1.min.js"></script>
+    <script src="../util/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../util/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
