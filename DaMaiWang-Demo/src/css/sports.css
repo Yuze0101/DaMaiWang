@@ -102,7 +102,36 @@ footer .footer-img-ul li {
   background-color: #fff;
 }
 
-#first-div li, #first-div p {
+#first-div li,
+#first-div p {
   width: 88px;
   height: 50px;
+}
+
+#forth-div ul {
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+}
+
+#forth-div ul li {
+  height: 50px;
+  width: 186px;
+}
+
+#forth-div .list-item {
+  font-size: 12px;
+  width: 30%;
+}
+
+#forth-div .list-item span {
+  font-size: 18px;
+}
+
+#fifth-div {
+  font-size: 12px;
+}
+
+#fifth-div .list-item {
+  width: 30%;
 }

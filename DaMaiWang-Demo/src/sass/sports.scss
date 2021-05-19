@@ -1,10 +1,35 @@
 @import "./global";
 #first-div {
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  li,
+  p {
+    width: 88px;
+    height: 50px;
+  }
+}
+#forth-div{
+  ul{
+    margin: 0;
     text-align: center;
     line-height: 50px;
-    background-color: #fff;
-  li,p{
-      width: 88px;
+    li{
       height: 50px;
+      width: 186px;
+    }
+  }
+  .list-item{
+    font-size: 12px;
+    width: 30%;
+    span{
+      font-size: 18px;
+    }
+  }
+}
+#fifth-div{
+  font-size: 12px;
+  .list-item{
+    width: 30%;
   }
 }
