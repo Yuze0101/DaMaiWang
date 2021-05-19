@@ -1,0 +1,183 @@
+@import "./global";
+
+#left-items-box {
+    .progress {
+        overflow: visible;
+
+        #progress-line {
+            background-color: $mainColor;
+            position: relative;
+            overflow: visible;
+
+            &::after {
+                content: ' ';
+                border: 5px solid $mainColor;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                right: -10px;
+                background-color: #dcdcdc;
+                z-index: 10;
+            }
+        }
+    }
+
+    #performance-inform {
+        .border-color {
+            border: 1px solid #dcdcdc;
+        }
+    }
+
+    #go-check-out {
+        background-color: $mainColor;
+        color: white;
+        width: 150px;
+    }
+}
+
+#right-box {
+    .py-2 {
+        border-bottom: 1px dashed #dcdcdc;
+        font-size: 14px;
+    }
+
+    .text-black-50 {
+        font-size: 12px;
+    }
+
+    .mb-0 {
+        padding-bottom: 5px;
+    }
+
+    #right-box-item-1 {
+
+        .big-number {
+            font-size: 18px;
+        }
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+}
+
+#main-left-box {
+    #nav-tab {
+        .active {
+            border-top: 3px solid $mainColor;
+            color: $mainColor;
+        }
+
+        a {
+            border-top: 3px solid transparent;
+            color: black;
+        }
+    }
+    .tab-pane {
+        .main-left-headline {
+            border-left: 3px solid $mainColor;
+            font-size: 18px;
+        }
+        .border-dashed{
+            border-top: 2px dotted #707070;
+            width: 80%;
+        }
+    }
+    .main-left-box-card {
+        font-size: 12px;
+        img {
+            max-width: 400px;
+        }
+        a {
+            color: black;
+        }
+        table{
+            width: 600px;
+            border-top: 2px solid #888888;
+            tr{
+                height: 40px;
+                font-size: 14px;
+                border-bottom:1px solid rgb(216, 216, 216);
+                th{
+                    width: 100px;
+                    box-sizing: border-box;
+                    padding-left: 5px;
+                    background-color: #F6F6F6;
+                }
+                td{
+                    width: 200px;
+                    border-left: 1px solid rgb(221, 221, 221);
+              }
+          } 
+        }
+        .survey{
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            background-color: #F6F6F6;
+        } 
+        .show-text{
+            font-size: 14px;
+            margin-bottom: 30px;
+        } 
+    }
+}
+
+#main-right-box {
+    .hot-top {
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 14px;
+        background-color: white;
+    }
+
+    .hot-top p {
+        margin: 0;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .hot-top .hot-image {
+        box-sizing: border-box;
+        padding: 10px 0px;
+        border-top: 1px dotted #bbb;
+        border-bottom: 1px dotted #bbb;
+        color: rgb(155, 155, 155);
+        font-size: 12px;
+    }
+
+    .hot-top .hot-image img {
+        width: 180px;
+    }
+
+    .hot-top span {
+        font-size: 12px;
+        color: rgb(143, 143, 143);
+    }
+
+    /* 浏览区 */
+    .hot-bottom {
+        background-color: white;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .hot-bottom p {
+        margin: 0;
+        font-size: 18px;
+        height: 40px;
+        border-bottom: 1px dotted #bbb;
+    }
+
+    .hot-bottom .bottom-text {
+        box-sizing: border-box;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

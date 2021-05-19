@@ -1,11 +1,4 @@
-<!--
- * @Author: leihao
- * @Date: 2021-05-18 15:46:40
- * @LastEditTime: 2021-05-19 09:53:48
- * @LastEditors: GengYuan
- * @Description: In User Settings Edit
- * @FilePath: \大麦网\DaMaiWang\DaMaiWang-Demo\src\html\UserCenter.html
--->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +12,7 @@
 </head>
 
 <body>
+    <!-- 头部导航栏 -->
     <header>
         <div
           class="
@@ -62,7 +56,7 @@
       </header>
 
     <!-- 顶部面包屑导航 -->
-    <nav aria-label="breadcrumb" class="container bg-white">
+    <nav aria-label="breadcrumb" class="container bg-transparent">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#" class="text-dark">我的大觅</a></li>
             <li class="breadcrumb-item"><a href="#" class="text-dark">账户中心</a></li>
@@ -94,9 +88,9 @@
 
             <!-- 主体部分右侧内容区域 -->
             <div class="col-10 pl-3 pr-0">
-                <div class="right-base px-3">
+                <div class="right-base px-3 pb-5">
 
-                    
+                    <!-- 标签页切换容器 -->
                     <div class="tab-content" id="userCenter-tabContent">
 
                         <!-- 订单管理内容 -->
@@ -165,6 +159,7 @@
                                     data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
                                     aria-selected="false">兴趣爱好</a>
                             </div>
+                            <!-- 标签页切换容器 -->
                             <div class="tab-content" id="nav-tabContent">
                                 <!-- 基本资料内容 -->
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
@@ -208,7 +203,7 @@
                                             <div class="form-group row">
                                                 <label for="inputMarry" class="col-sm-2 col-form-label">婚姻状况</label>
                                                 <div class="col-sm-5">
-                                                    <select id="inputState" class="form-control">
+                                                    <select id="inputMarry" class="form-control">
                                                         <option selected>请选择</option>
                                                         <option>已婚</option>
                                                         <option>未婚</option>
@@ -218,7 +213,7 @@
                                             <div class="form-group row">
                                                 <label for="inputEdu" class="col-sm-2 col-form-label">教育程度</label>
                                                 <div class="col-sm-5">
-                                                    <select id="inputState" class="form-control">
+                                                    <select id="inputEdu" class="form-control">
                                                         <option selected>请选择</option>
                                                         <option>本科及以下</option>
                                                         <option>研究生及以上</option>
@@ -228,7 +223,7 @@
                                             <div class="form-group row">
                                                 <label for="inputCareer" class="col-sm-2 col-form-label">从事行业</label>
                                                 <div class="col-sm-5">
-                                                    <select id="inputState" class="form-control">
+                                                    <select id="inputCareer" class="form-control">
                                                         <option selected>请选择</option>
                                                         <option>传统行业</option>
                                                         <option>非传统行业</option>
@@ -238,7 +233,7 @@
                                             <div class="form-group row">
                                                 <label for="inputIncome" class="col-sm-2 col-form-label">每月收入</label>
                                                 <div class="col-sm-5">
-                                                    <select id="inputState" class="form-control">
+                                                    <select id="inputIncome" class="form-control">
                                                         <option selected>请选择</option>
                                                         <option>一万元以下</option>
                                                         <option>一万元以上</option>
@@ -248,12 +243,12 @@
                                             <div class="form-group row">
                                                 <label for="inputHometown" class="col-sm-2 col-form-label">家乡</label>
                                                 <div class="col-sm-6 d-flex justify-content-between">
-                                                    <select id="inputState" class="form-control col-sm-5">
+                                                    <select id="inputHometownProvince" class="form-control col-sm-5">
                                                         <option selected>不限</option>
                                                         <option>北京</option>
                                                         <option>四川</option>
                                                     </select>
-                                                    <select id="inputState" class="form-control col-sm-5">
+                                                    <select id="inputHometownCity" class="form-control col-sm-5">
                                                         <option selected>不限</option>
                                                         <option>东城区</option>
                                                         <option>成都</option>
@@ -263,12 +258,12 @@
                                             <div class="form-group row">
                                                 <label for="inputPosition" class="col-sm-2 col-form-label">现居住地</label>
                                                 <div class="col-sm-6 d-flex justify-content-between">
-                                                    <select id="inputState" class="form-control col-sm-5">
+                                                    <select id="inputPositionProvince" class="form-control col-sm-5">
                                                         <option selected>不限</option>
                                                         <option>北京</option>
                                                         <option>四川</option>
                                                     </select>
-                                                    <select id="inputState" class="form-control col-sm-5">
+                                                    <select id="inputPositionCity" class="form-control col-sm-5">
                                                         <option selected>不限</option>
                                                         <option>东城区</option>
                                                         <option>成都</option>
@@ -276,9 +271,9 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="idNumber" class="col-sm-2 col-form-label">身份证号</label>
+                                                <label for="inputIdNumber" class="col-sm-2 col-form-label">身份证号</label>
                                                 <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="inputName">
+                                                    <input type="text" class="form-control" id="inputIdNumber">
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
@@ -319,6 +314,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 常用购票人 -->
                         <div class="tab-pane fade" id="ticket-buyer" role="tabpanel" aria-labelledby="ticket-buyer-tab">
                             功能未上线
                         </div>
@@ -328,7 +324,7 @@
         </div>
     </main>
 
-
+    <!-- 底部导航栏 -->
     <footer>
         <div class="container flex-column align-items-center">
           <div class="d-flex justify-content-around pt-2">
