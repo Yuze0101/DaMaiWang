@@ -95,3 +95,14 @@ footer .footer-img-ul li {
 footer .footer-img-ul li {
   border: none;
 }
+
+#first-div {
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+}
+
+#first-div li, #first-div p {
+  width: 88px;
+  height: 50px;
+}
