@@ -96,6 +96,10 @@ footer .footer-img-ul li {
   border: none;
 }
 
+body {
+  background-color: #F5F5F5;
+}
+
 .container .col-2 {
   background-color: white;
 }
