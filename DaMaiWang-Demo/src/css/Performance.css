@@ -184,7 +184,7 @@ footer .footer-img-ul li {
 }
 
 #main-left-box .main-left-box-card table {
-  width: 600px;
+  width: 80%;
   border-top: 2px solid #888888;
 }
 
@@ -208,18 +208,71 @@ footer .footer-img-ul li {
 }
 
 #main-left-box .main-left-box-card .survey {
+  width: 80%;
   height: 40px;
   line-height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 10px;
   margin-bottom: 15px;
   background-color: #F6F6F6;
 }
 
 #main-left-box .main-left-box-card .show-text {
+  width: 80%;
   font-size: 14px;
   margin-bottom: 30px;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter {
+  width: 80%;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter p {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter p img {
+  vertical-align: middle;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter p strong {
+  color: #ff3c1b;
+  vertical-align: middle;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter textarea {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid #D1D1D1;
+}
+
+#main-left-box .main-left-box-card .aisle-sitter button {
+  width: 150px;
+  color: white;
+  margin: 15px 0 100px 0;
+  background-color: #ff3c1b;
+}
+
+#main-left-box .main-left-box-card .buy-ticket {
+  font-size: 14px;
+}
+
+#main-left-box .main-left-box-card .buy-ticket a img {
+  margin: 0 5px 0 0;
+}
+
+#main-left-box .main-left-box-card .buy-order {
+  font-size: 14px;
+}
+
+#main-left-box .main-left-box-card .buy-order img {
+  width: 80%;
 }
 
 #main-right-box {
